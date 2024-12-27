@@ -25,7 +25,7 @@ st.title("Next word Prediction")
 
 input= st.text_input("Enter Text Here", value="")
 
-if st.button('Classify'):
+if st.button('Predict Next Word'):
     max_sequence_len=model.input_shape[1]+1
     st.write("Next word:",predict_next_word(model,tokenizer,input,max_sequence_len))
     
