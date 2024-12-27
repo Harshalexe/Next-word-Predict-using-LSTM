@@ -3,7 +3,7 @@ from tensorflow.keras.models import load_model
 import streamlit as st
 import numpy as np
 import pickle
-max_sequence_len=14
+
 with open('LSTM_tokenizer.pkl','rb') as handle:
     tokenizer=pickle.load(handle)
 
